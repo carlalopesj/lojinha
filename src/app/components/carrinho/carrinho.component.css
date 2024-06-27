@@ -1,0 +1,48 @@
+/*Carrinho de cada usuário*/
+.carrinho {
+    margin-left: 5rem;
+}
+
+.carrinho h2 {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+/*Listando os produtos de um carrinho*/
+.carrinho li {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+}
+
+/*Total e botão de esvaziar o carrinho*/
+.total {
+    font-weight: bold;
+    margin-top: 7rem;
+}
+
+.btn-limpar {
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(235, 101, 48);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .btn-limpar:hover, .btn-comprar:hover {
+    background-color: rgb(74, 74, 100);
+  }
+
+  .btn-comprar {
+    margin-left: 2rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: rgb(13, 153, 13);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }

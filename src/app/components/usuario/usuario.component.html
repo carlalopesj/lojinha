@@ -1,0 +1,19 @@
+<!--HTML dos usuários-->
+<div class="usuario-lista">
+  <h2>Usuários</h2>
+  <ul class="lista">
+    <li *ngFor="let user of users" (click)="selectUser(user)" 
+        [ngClass]="{'selected': user.id === selectedUser?.id}">
+      <a href="javascript:void(0)">{{ user.name }}</a>
+    </li>
+  </ul>
+</div>
+
+<div class="usuario-cadastro">
+  <h3>Cadastrar Novo Usuário</h3>
+  <form (ngSubmit)="addUser()">
+    <label for="name">Nome:</label>
+    <input type="text" id="name" [(ngModel)]="newUser.name" name="name" required>
+    <button type="submit" class="btn-cadastro">Cadastrar</button>
+  </form>
+</div>

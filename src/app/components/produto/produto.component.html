@@ -1,0 +1,26 @@
+<!--HTML dos produtos-->
+<div class="produtos">
+  <div class="produto-lista">
+    <h2>Produtos</h2>
+    <ul>
+      <li *ngFor="let produto of produtos">
+        <p>{{ produto.nome }} - {{ produto.preco | currency:'BRL' }} </p> |
+        <button (click)="adicionarAoCarrinho(produto)" class="btn-add"><img src="../../../assets/carrinho-compras.png" class="img-carrinho"/></button>
+        <button (click)="deleteProduto(produto.id)" class="btn-remover"><img src="../../../assets/lixeira.png" class="img-carrinho"/></button>
+      </li>
+    </ul>
+    <div *ngIf="mensagem" class="mensagem">{{ mensagem }}</div>
+  </div>
+  <div class="produto-add">
+    <h3>Adicionar Produto</h3>
+    <form (ngSubmit)="addProduto()">
+      <label>Nome:
+        <input [(ngModel)]="produto.nome" name="nome" required>
+      </label>
+      <label>Preço:
+        <input [(ngModel)]="produto.preco" name="preco" type="number" required>
+      </label>
+      <button type="submit" class="btn-produto">Adicionar</button>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+<!--HTML do carrinho-->
+<div class="carrinho">
+  <h2>Itens do Carrinho</h2>
+  <ul>
+    <li *ngFor="let item of items">
+      {{ item.nome }} - {{ item.preco | currency:'BRL' }}
+    </li>
+  </ul>
+  <p class="total">Total: {{ totalPrice | currency:'BRL' }}</p>
+  <button (click)="clearCart()" class="btn-limpar">Esvaziar Carrinho</button>
+  <button class="btn-comprar">Finalizar Compra</button>
+</div>

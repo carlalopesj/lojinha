@@ -1,0 +1,49 @@
+/*Estilizando a barra de navegação no geral*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(6, 6, 44);
+    height: 7rem;
+    align-items: center;
+}
+/*Parte da logo da loja*/
+.logo-loja {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+/* Redefinindo tamanho da imagem quanto a barra de navegação */
+#logo {
+    width: 7%;
+}
+/* Parágrafo escrito "Lojinha" ao lado da imagem */
+.logo-loja p {
+    font-weight: bold;
+    color: white;
+}
+/*Links de navegação*/
+ul {
+    display: flex;
+    gap: 2rem;
+}
+
+a {
+    color: white;
+}
+
+/*Parte principal - Home*/
+.pg-principal {
+    display: flex;
+}
+
+/*Navegar entre os usuários*/
+.usuarios {
+    width: 22rem; 
+    border-right: 1px solid #000;
+    padding: 2rem;
+    background-color: rgb(231, 231, 231);
+    height: calc(100vh - 7rem);
+}
+/*#c4e3fe*/
